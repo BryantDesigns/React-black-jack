@@ -25,7 +25,7 @@ const Table = () => {
     const apiURL = 'https://deckofcardsapi.com/api/deck/' + deckID+'/draw/?count=1'
     fetch(apiURL)
     .then(response => response.json())
-    .then(data=> {setHand([...hand, data.cards [0] ]); console.log(data)})
+    .then(data => {setHand([...hand, data.cards[0] ]); console.log(data)})
 
   }
   
@@ -33,8 +33,7 @@ const Table = () => {
 
     <div>
         
-        <button className='btn btn-secondary' onClick={getNewDeck}> Reshuffle deck</button>
-        
+        <button className='btn btn-secondary' onClick={getNewDeck}>Reshuffle deck</button>
         <br/>
         {deckID}
         <br/>
