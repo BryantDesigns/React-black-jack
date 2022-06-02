@@ -40,7 +40,6 @@ const Table = () => {
         <br/>
         <button className='btn btn-secondary' onClick={drawHand}>Start Hand</button>
         <button  className='btn btn-secondary' onClick ={drawNewCard}>Draw new card</button>
-        <button className='btn btn-secondary' onClick={deletecard}>remove card</button>
 
         <Hand cards ={hand}/>
     </div>
